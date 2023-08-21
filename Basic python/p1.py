@@ -20,7 +20,7 @@ def sqrt(a):
 
 def modulo(a,b):
     c=a%b
-    return c
+    return a
 
 is_on = True
 
