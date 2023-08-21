@@ -18,6 +18,10 @@ def sqrt(a):
     c = a**2
     return c
 
+def modulo(a,b):
+    c=a%b
+    return c
+
 is_on = True
 
 while is_on:
@@ -28,6 +32,7 @@ while is_on:
     print("For division - div")
     print("For exit the code - exit")
     print("For square root - sqrt")
+    print("For modulo - modulo")
 
     func_name = input("Please enter the function name from the above list: ")
     
@@ -62,3 +67,12 @@ while is_on:
             num = int(input("Please enter the number: "))
             sq = sqrt(num)
             print(f"The sqaure root of the number = {sq}")
+
+        elif func_name == "modulo":
+            num = int(input("Please enter the first number: "))
+            num2 = int(input("Please enter the second number: "))
+            mod = modulo(num,num2)
+            print(f"The modulo of two numbers = {mod}")
+
+
+
